@@ -19,9 +19,10 @@ class RVFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentRVBinding.inflate(layoutInflater)
-        return binding.root
-    }
+//        binding = FragmentRVBinding.inflate(layoutInflater)
+//        return binding.root
+//        //hello world
+//    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -29,14 +30,14 @@ class RVFragment : Fragment() {
         initRV()
     }
 
-    private fun initRV() {
-        cakesAdapter = CakesAdapter(cakesList) {
-            findNavController().navigate(RVFragmentDirections.actionRVFragmentToDetailFragment2(image = cakesList[it].image, name = cakesList[it].name, desc = cakesList[it].desc, price = cakesList[it].price))
-//            findNavController().navigate(R.id.action_RVFragment_to_detailFragment2, bundle)
-//            requireActivity().supportFragmentManager.beginTransaction().replace(R.id.fragment_container, detailFragment).addToBackStack(null).commit()
-        }
-        binding.rvFruits.adapter = cakesAdapter
-    }
+//    private fun initRV() {
+//        cakesAdapter = CakesAdapter(cakesList) {
+//            findNavController().navigate(RVFragmentDirections.actionRVFragmentToDetailFragment2(image = cakesList[it].image, name = cakesList[it].name, desc = cakesList[it].desc, price = cakesList[it].price))
+////            findNavController().navigate(R.id.action_RVFragment_to_detailFragment2, bundle)
+////            requireActivity().supportFragmentManager.beginTransaction().replace(R.id.fragment_container, detailFragment).addToBackStack(null).commit()
+//        }
+//        binding.rvFruits.adapter = cakesAdapter
+//    }
 
     private fun onLoad() {
         cakesList.add(
@@ -48,15 +49,15 @@ class RVFragment : Fragment() {
                 "1500000"
             )
         )
-        cakesList.add(
-            Cakes(
-                image1,
-                "Три шоколада",
-                "\n" +
-                        "Биздин жаңы пирогдорду татып көрүңүз: тоок эти жана шпинат, тоок эти жана козу карын, лосось (сом балык) жана помидор + сүйүктүү капучино же латте (400 мл)! Комбонун баасы (259 же 279 сом) пирогдун түрүнө жараша болот.\n",
-                "1500000"
-            )
-        )
+//        cakesList.add(
+//            Cakes(
+//                image1,
+//                "Три шоколада",
+//                "\n" +
+//                        "Биздин жаңы пирогдорду татып көрүңүз: тоок эти жана шпинат, тоок эти жана козу карын, лосось (сом балык) жана помидор + сүйүктүү капучино же латте (400 мл)! Комбонун баасы (259 же 279 сом) пирогдун түрүнө жараша болот.\n",
+//                "1500000"
+//            )
+//        )
         cakesList.add(
             Cakes(
                 image1,

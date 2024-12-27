@@ -26,17 +26,17 @@ class DetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 // parcelable  == serializable
-        if (arguments != null) {
-            val args = DetailFragmentArgs.fromBundle(requireArguments())
-            binding.btnBack.setOnClickListener() {
-                findNavController().navigateUp()
-            }
-            binding.tvName.text = args.name
-            binding.tvDescription.text = args.desc
-            binding.tvPrice.text = args.price
-            view
-            Glide.with(requireContext()).load(args.image).into(binding.ivFruit)
-        }
+//        if (arguments != null) {
+//            val args = DetailFragmentArgs.fromBundle(requireArguments())
+//            binding.btnBack.setOnClickListener() {
+//                findNavController().navigateUp()
+//            }
+//            binding.tvName.text = args.name
+//            binding.tvDescription.text = args.desc
+//            binding.tvPrice.text = args.price
+//            view
+//            Glide.with(requireContext()).load(args.image).into(binding.ivFruit)
+//        }
 
 
     }
